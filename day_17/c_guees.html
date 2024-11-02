@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess the number</title>
+</head>
+<body>
+    <script>
+        let favNum = 7;
+
+        let guess = prompt("Enter my favNum")
+        while((guess != favNum) && (guess != "quit"))
+        {
+            guess = prompt("wrong ans! plz try again");
+        }
+        
+        if(guess == favNum)
+        {
+            console.log("congratulation! you are right!");
+        }
+        else
+        {
+            console.log("you quit");
+        }
+    </script>
+</body>
+</html>

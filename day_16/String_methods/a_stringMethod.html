@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>String Methods</h2>
+    <script>
+      {
+        let msg = "                 Hello   ";
+        console.log(msg);
+        let a = msg.trim();
+        console.log(a);
+
+        console.log("...................");
+
+        console.log(msg);
+
+        //string are immutable in js
+      }
+      //where have to use trim in real website
+      {
+       // let password = prompt("set your password");
+        //console.log(password.trim());
+      }
+
+      //uppercase anad lowercase
+      {
+        let name = "   Nikhil Mahato";
+        console.log(name.toUpperCase());
+        console.log(name.trim().toLowerCase());
+      }
+
+    
+
+      //indexOf();
+
+      {
+        let str = "ILOVECODING";
+        console.log(str.indexOf("LOVECODIN"));    //1
+        console.log(str.indexOf("LOVE"));         //1
+        console.log(str.indexOf("LOVE"));         //1
+        console.log(str.indexOf("ILOVE"));        //0
+
+
+        console.log(str.indexOf("JLO"));        //-1
+        
+        console.log(str.indexOf("N"));        //9     
+    }
+
+
+    //slice method
+
+    {
+        let str = "ILOVECODING";
+        console.log(str.slice(0));
+        console.log(str.slice(1));
+
+        console.log(str.slice(2,5));
+        console.log(str.slice(5,9));  
+
+        console.log(str.slice(-2));   //num - 1   => NG
+    }
+
+    {
+    
+    }
+
+    </script>
+  </body>
+</html>

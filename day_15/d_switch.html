@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      {
+        let lightColor = prompt(
+          "Enter the traffic light color (red, yellow, green):"
+        );
+
+        switch (lightColor) {
+          case "red":
+            console.log("Stop! Red means stop.");
+            break;
+          case "yellow":
+            console.log("Caution! Yellow means go slow.");
+            break;
+          case "green":
+            console.log("Go! Green means go.");
+            break;
+          default:
+            console.log("The light is not on.");
+        }
+      }
+    </script>
+  </body>
+</html>

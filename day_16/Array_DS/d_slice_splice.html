@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //slice
+      let alphabet = ['A','B','C','D','E','F','G'];
+      console.log(alphabet); //['A','B','C','D','E','F','G']
+      console.log(alphabet.slice(2));
+
+
+
+      //splice
+      console.log(".......splice........");
+
+      //one parameter splice(2)
+      let alpha = ['A','B','C','D','E','F','G'];
+      console.log(alpha);
+      //alpha.splice(2)
+      console.log(alpha.splice(2));
+      console.log(alpha);
+      console.log(alpha)
+
+      console.log("............two parameter.............");
+
+      // two parameter splice(2,1)
+      let arr = ['a','b','c','d','e'];
+      console.log(arr);
+      console.log(arr.splice(2,2));
+      console.log(arr);
+      
+      //tree para meter splice(0,1,"blue","grey")
+      let color = ["white","green","black","orange"]
+      color.splice(0,1,"blue","grey");
+      console.log(color);
+
+
+     
+
+      
+  </script>
+  </body>
+</html>
