@@ -1,0 +1,15 @@
+{
+  "name": "a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "a_this.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+    "start": "node --watch c_arrow_function.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
