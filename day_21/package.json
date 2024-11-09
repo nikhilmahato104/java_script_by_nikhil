@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     
-    "start": "node --watch f_this_with_arrow_function.js"
+    "start": "node --watch a_for_each_method.js"
   },
   "author": "",
   "license": "ISC"
