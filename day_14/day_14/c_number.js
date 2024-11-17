@@ -42,6 +42,7 @@ console.log(typeof new RegExp("abc")); // object
 
 
 
+
 let x = BigInt("12555125441544152152415412415415152152151521202");
 console.log("THE TYPE OF X IS : - ",typeof(x),`THE VALUE OF  X IS ${x} `);
 
