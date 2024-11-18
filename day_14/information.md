@@ -1,6 +1,6 @@
 # Full-Stack Development Learning Resources
 
-Welcome to the educational resources repository! This repository is designed to guide you through the process of learning **Full-Stack Development**. Below you will find instructions on how to make the most of the content provided here .
+Welcome to the educational resources repository! This repository is designed to guide you through the process of learning **Full-Stack Development**. Below you will find instructions on how to make the most of the content provided here.
 
 ## How to Use This Repository
 
