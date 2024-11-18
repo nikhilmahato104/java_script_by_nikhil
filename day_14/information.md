@@ -8,6 +8,7 @@ Welcome to the educational resources repository! This repository is designed to 
 - Begin by **reading the PDF** starting from **Day 14**.
 - The earlier notes from **Day 1 to Day 13** cover **HTML** and **CSS**. *(Note: I will upload further resources soon.)*
 ### Step 2: **Explore the Code**
+
 - Open **VS Code** and navigate to my **GitHub folder** for **Day 14**.
 - Inside, you will find the following files:
   - `index.html`
