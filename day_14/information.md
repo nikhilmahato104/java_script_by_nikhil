@@ -55,7 +55,6 @@ Welcome to the educational resources repository! This repository is designed to 
 
 - This repository is inspired by the teachings from **ApnaCollege** and is intended to help students gain a better understanding of Full-Stack Development.
 - Special thanks to the creators of the course for providing a structured learning path.
-
 ---
 
 **Happy Learning! 🚀**
