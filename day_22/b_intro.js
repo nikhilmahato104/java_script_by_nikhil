@@ -13,6 +13,12 @@ for(let i = 0 ; i<array.length;i++)
     console.log(array[i] , typeof(array[i]));
 }
 
+for(let i = 0 ; i<array.length;i++)
+{
+    console.log(array[i] , typeof(array[i]));
+}
+
+
 
 
 
