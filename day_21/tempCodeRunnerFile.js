@@ -8,3 +8,4 @@ let maxArr = array.reduce((max,el)=> {
         return max;
     }
 })
+
