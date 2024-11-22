@@ -7,8 +7,8 @@ Welcome to the educational resources repository! This repository is designed to 
 ### Step 1: **Start with the PDF**
 - Begin by **reading the PDF** starting from **Day 14**.
 - The earlier notes from **Day 1 to Day 13** cover **HTML** and **CSS**. *(Note: I will upload further resources soon.)*
-
 ### Step 2: **Explore the Code**
+
 - Open **VS Code** and navigate to my **GitHub folder** for **Day 14**.
 - Inside, you will find the following files:
   - `index.html`
@@ -35,6 +35,11 @@ Welcome to the educational resources repository! This repository is designed to 
    - Go to: [ApnaCollege Full-Stack Course](https://www.apnacollege.in/course/delta)
    - **Invest in your education** for a comprehensive learning experience.
 
+
+
+
+
+
 ---
 
 ## Learning Resources 🔑
@@ -55,7 +60,6 @@ Welcome to the educational resources repository! This repository is designed to 
 
 - This repository is inspired by the teachings from **ApnaCollege** and is intended to help students gain a better understanding of Full-Stack Development.
 - Special thanks to the creators of the course for providing a structured learning path.
-
 ---
 
 **Happy Learning! 🚀**
