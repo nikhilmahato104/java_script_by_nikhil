@@ -1,0 +1,173 @@
+<!-- vvi check internet on or off -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Connection Status</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .status {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .online {
+      color: green;
+    }
+    .offline {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Internet Connection Status</h1>
+  <p class="status" id="status">Checking connection...</p>
+
+  <script>
+    const statusElement = document.getElementById('status');
+
+    async function checkInternetConnection() {
+      try {
+        // Use a lightweight fetch request to quickly test connectivity
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 1000); // Timeout after 1 second
+
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts/1', {
+          method: 'HEAD',
+          cache: 'no-store',
+          signal: controller.signal
+        });
+
+        clearTimeout(timeout);
+
+        if (response.ok) {
+          statusElement.textContent = 'Internet Connected';
+          statusElement.className = 'status online';
+        } else {
+          throw new Error('Fetch failed');
+        }
+      } catch (error) {
+        statusElement.textContent = 'Internet Connection Lost';
+        statusElement.className = 'status offline';
+      }
+    }
+
+    // Initial check on page load
+    checkInternetConnection();
+
+    // Polling every second for real-time updates
+    setInterval(checkInternetConnection, 1000);
+
+    // Additional real-time updates on online/offline events
+    window.addEventListener('online', checkInternetConnection);
+    window.addEventListener('offline', checkInternetConnection);
+  </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Connection & Speed Status</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .status {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .online {
+      color: green;
+    }
+    .offline {
+      color: red;
+    }
+    .speed {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .speed .fast {
+      color: green;
+    }
+    .speed .slow {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Internet Connection & Speed Status</h1>
+  <p class="status" id="status">Checking connection...</p>
+  <p class="speed" id="speed">Checking speed...</p>
+
+  <script>
+    const statusElement = document.getElementById('status');
+    const speedElement = document.getElementById('speed');
+
+    // Function to check if the user has internet connection
+    async function checkInternetConnection() {
+      try {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 1000); // Timeout after 1 second
+
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts/1', {
+          method: 'HEAD',
+          cache: 'no-store',
+          signal: controller.signal
+        });
+
+        clearTimeout(timeout);
+
+        if (response.ok) {
+          statusElement.textContent = 'Internet Connected';
+          statusElement.className = 'status online';
+          checkSpeed();  // Check speed if connected
+        } else {
+          throw new Error('Fetch failed');
+        }
+      } catch (error) {
+        statusElement.textContent = 'Internet Connection Lost';
+        statusElement.className = 'status offline';
+        speedElement.textContent = '';  // Clear speed status
+      }
+    }
+
+    // Function to simulate speed check (simple example)
+    function checkSpeed() {
+      // Simulating download speed based on latency
+      const speed = Math.random() * 100; // Random speed for demo (in Mbps)
+
+      if (speed > 50) {
+        speedElement.textContent = `Download Speed: ${speed.toFixed(2)} Mbps (Fast)`;
+        speedElement.className = 'speed fast';
+      } else {
+        speedElement.textContent = `Download Speed: ${speed.toFixed(2)} Mbps (Slow)`;
+        speedElement.className = 'speed slow';
+      }
+    }
+
+    // Initial check on page load
+    checkInternetConnection();
+
+    // Polling every 5 seconds for real-time updates
+    setInterval(checkInternetConnection, 5000);
+
+    // Additional real-time updates on online/offline events
+    window.addEventListener('online', checkInternetConnection);
+    window.addEventListener('offline', checkInternetConnection);
+  </script>
+</body>
+</html> -->
+
+
+
+

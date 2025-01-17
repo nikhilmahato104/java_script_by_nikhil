@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action?">
+        <input  placeholder="enter user name">
+        <button>register</button>
+    </form>
+
+    <script>
+        // get the input element
+        let form = document.querySelector ('form');
+
+        form.addEventListener("submit",function(){
+            event.preventDefault();
+            window.confirm("do you want to submit the form");
+            form.reset();
+            form.style.display="none";
+            //extract data from form
+        })
+    </script>
+</body>
+</html>

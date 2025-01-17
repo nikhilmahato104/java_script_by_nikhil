@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    
+    <input type="text" id="input" placeholder="add new todo">
+    <button id="add">add</button>
+
+    <ul>
+        
+    </ul>
+   
+
+    <script>
+        let  btn = document.querySelector("button");
+        let ul = document.querySelector("ul");
+        let inp = document.querySelector("input");
+        
+        btn.addEventListener("click",function(){
+            if(inp.value==""){
+                alert("please enter a todo");
+            }else{
+                console.log("new added element is : "+inp.value);
+                let item = document.createElement("li");
+                let delbtn = document.createElement("button");
+                delbtn.innerText = "delete";
+                delbtn.classList.add("delete");
+                 item.innerText = inp.value;
+              
+                ul.appendChild(item);
+                
+                item.appendChild(delbtn);
+                
+                inp.value="";
+
+                let delBtns = document.querySelectorAll(".delete");
+            
+                    delbtn.addEventListener("click",function(){
+                        let parent = this.parentElement;
+                        console.log("deleted element is : " + parent.childNodes[0].nodeValue.trim()) 
+                        parent.remove();
+                    })
+                
+
+                
+            }
+        })
+    </script>
+</body>
+</html>

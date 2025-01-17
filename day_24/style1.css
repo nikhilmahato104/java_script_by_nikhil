@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color:antiquewhite;
+    color:rgb(6, 6, 6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    border: 10px solid black;
+    margin: 0.5rem;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .yellow{
+    background-color: rgb(196, 196, 67);
+  }
+  .red{
+    background-color: #d95980;
+  }
+  .green{
+    background-color: rgb(81, 178, 178);
+  }
+  .purple{
+    background-color: rgb(31, 82, 177);
+  }
+  .flash{
+    background-color: white;
+  }
+
+  .userFlash{
+    background-color: green;
+  }

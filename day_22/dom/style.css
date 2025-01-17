@@ -1,0 +1,30 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #ff0000;
+    
+  }
+
+#oldimg1{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  #oldimg2{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  #oldimg3{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }

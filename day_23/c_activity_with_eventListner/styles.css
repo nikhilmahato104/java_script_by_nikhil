@@ -1,0 +1,13 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+body{
+align-items: center;
+text-align: center;
+}

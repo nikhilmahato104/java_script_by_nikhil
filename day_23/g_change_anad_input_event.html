@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="abc.js">
+        <input type="text" placeholder="type" id="user">
+        <input type="password" placeholder="pass" id="pass">
+        <input type="submit" value="submit">  
+    </form>
+
+    <script>
+
+        let form = document.querySelector("form");
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+            console.log("form submitted");
+        });
+        let input = document.querySelector('#user');
+        input.addEventListener('change', function(event){
+            console.log("input changed");
+            console.log('final value is: ',this.value);
+        });
+        let input2 = document.querySelector('#pass');
+        pass.addEventListener('input',function(){
+            console.log("input changed");
+            console.log('final value is: ',this.value);
+        })
+
+    </script>
+</body>
+</html>

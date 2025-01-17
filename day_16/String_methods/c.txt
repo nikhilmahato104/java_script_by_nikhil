@@ -1,0 +1,96 @@
+Q)HOW MANY STRING METHODS IN JS?
+
+ChatGPT said:
+ChatGPT
+
+JavaScript provides a rich set of string methods, and as of now, there are approximately
+40+ string methods available in modern JavaScript. Here's a categorized breakdown of them:
+
+High-Importance String Methods (Commonly Used)
+            1)Access and Information
+
+            charAt()
+            charCodeAt()
+            codePointAt()
+            length (property, not a method)
+
+            2)Searching and Matching
+
+            indexOf()
+            lastIndexOf()
+            includes()
+            startsWith()
+            endsWith()
+            search()
+            match()
+            matchAll()
+
+           3)Modification
+
+            concat()
+            replace()
+            replaceAll()
+            slice()
+            substring()
+            substr() (Deprecated)
+            toUpperCase()
+            toLowerCase()
+            trim()
+            trimStart() (or trimLeft())
+            trimEnd() (or trimRight())
+
+           4)Splitting and Joining
+
+            split()
+            repeat()
+
+
+Lower-Importance String Methods (Less Frequently Used)
+Comparison
+
+localeCompare()
+Normalization
+
+normalize()
+Padding
+
+padStart()
+padEnd()
+Conversion
+
+toString()
+valueOf()
+
+
+HTML-Specific String Methods (Rarely Used)
+HTML Wrapping
+anchor()
+big()
+blink() (Deprecated)
+bold()
+fixed()
+fontcolor()
+fontsize()
+italics()
+link()
+small()
+strike()
+sub()
+sup()
+Summary
+There are 30+ commonly used string methods, and including legacy or rarely used HTML methods, 
+the total number exceeds 40 methods. However, most developers focus on the frequently 
+used methods like slice(), replace(), split(), and includes() for day-to-day programming.
+
+
+
+
+
+
+
+
+
+
+
+
+
