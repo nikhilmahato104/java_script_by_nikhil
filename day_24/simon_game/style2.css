@@ -8,7 +8,7 @@ body {
   .btn-container {
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
   .btn {
@@ -44,7 +44,7 @@ body {
       border-radius: 8px; /* Rounded corners */
       padding: 12px 24px; /* Padding for size */
       font-size: 16px; /* Font size */
-      cursor: pointer; /* Pointer cursor on hover */
+      /* cursor: pointer; Pointer cursor on hover */
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
       transition: all 0.3s ease; /* Smooth transition for hover */
   }
@@ -55,7 +55,7 @@ body {
       border-radius: 8px; /* Rounded corners */
       padding: 12px 24px; /* Padding for size */
       font-size: 16px; /* Font size */
-      cursor: pointer; /* Pointer cursor on hover */
+      /* cursor: pointer; Pointer cursor on hover */
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
       transition: all 0.3s ease; /* Smooth transition for hover */
   }
@@ -95,7 +95,7 @@ body {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .close:hover,
 .close:focus {
@@ -129,11 +129,48 @@ body {
 .close {
   font-size: 28px;
   font-weight: bold;
-  cursor: pointer;
+  /* cursor: pointer; */
   float: right;
   color: #aaa;
 }
 
 .close:hover {
   color: #000;
+}
+
+/* Prevent touch highlight on mobile devices */
+.btn {
+  -webkit-tap-highlight-color: transparent; /* Remove the touch highlight */
+  touch-action: manipulation; /* Prevent unintended touch behaviors */
+}
+
+/* Button hover and active effects */
+.btn:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:active {
+  transform: scale(1); /* Reset zoom effect on click */
+  box-shadow: none; /* Remove shadow */
+}
+
+/* Modal Responsiveness */
+.modal-content {
+  width: 90%; /* Adjust for smaller screens */
+}
+
+.btn-container {
+  flex-wrap: wrap; /* Make buttons wrap on small screens */
+}
+
+.btn {
+  height: 100px; /* Adjust button size for mobile */
+  width: 100px;
+}
+
+#start-btn, #rules-btn {
+  font-size: 14px; /* Adjust font size for buttons */
+  padding: 10px 20px;
 }
